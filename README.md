@@ -8,8 +8,8 @@
 El presente repositorio tiene por objetivo dar a conocer el funcionamiento del brazo robótico Robot VT6L de la marca EPSON, en donde por medio de funciones y comandos que nos permitiran otorgarle movimientos deseados y precisos al robot se realicen actividades de un entorno industrial.
 
 <p align="center">
-  <img src="/Imágenes/BrazoRobotico.PNG" width="400" />
- <img src="/Imágenes/BrazoRoboticoUNAL.PNG" style="float:left;" />
+  <img src="/Imágenes/Robot_VT6L.PNG" width="400" />
+ <img src="/Imágenes/Robot_VT6L_Sim.PNG" style="float:left;" />
 </p>
 
 ## Solucion planteada
