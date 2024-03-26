@@ -37,30 +37,41 @@ Desde el diagramma main del proyecto sehace el llamado a las diferentes funcione
 
 ## [Código main EPSON](/Lab2/Main.prg)
 
-Para el diseño del código se inició crando una herramienta la cual me ayudaba como referencia para modificar el TCP en donde se establece como punto de referencia la punta del marcador ubicado sobre esta misma, esta se ajustó de modo que el eje Z se muestre en paralelo a la dirección del largo de la herramienta con el fin de asegurar que al ubicar de forma perpendicular el eje Z al plano, del mismo modo el marcador se iba a comportar
+Para el diseño del código se inició crando un punto nombrado como HOME, desde el cual el robot parte para iniciar las trayectorias. Seguido a esto se crean puntos para el origen, el EjeX y el EjeY, los cuales nos ayudan para referenciar los mapeos que se realizan durante las trayectorias.
 
 <p align="center">
   <img src="/Imágenes/CreacionHerramienta.PNG" />
  <img src="/Imágenes/TCP.PNG" style="width: 45%; height: auto;" />
 </p>
 
-Se procedio a establecer los diferentes _Targets_ por donde se espera pasar el marcador, entre estos inicialmente se ubicaron el punto de mantenimiento _Target_Operator_ en donde se hace el ajuste de la herramienta, la posicion de origen o inicial _Posicion_Inicial_ en donde se ubica la esquina superior derecha de la hoja como su work object y finalmente el punto home del proyecto _HOME_, en el cual se posiciona el robot cada que va a hacer un cambio de esquema y en donde va a terminar cuando culmine el programa.
-Por otro lado se diseñaron los _Targets_ para los puntos sobre la superfuicie en cada una de las letras y del logo, estas se representaron como _Target(Letra que se va a dibujar)\_(Numero de punto en la letra)_.
+A continuación se crearon los diferentes nombres como referencia para cada una de las salidas, desde la función main se activaron los motores y se establecio una salida de potencia alta en cada uno de estos, una vez pasados por los puntos del estado HOME, se procedió a pasar por los puntos creados de "Origen", "EjeX" y "EjeY", con el fin de evaluar los mapeos que se van a crear atraves de estosl.
 
 <p align="center">
-  <img src="/Imágenes/EncabezadoCódigo.PNG" />
+  <img src="/Imágenes/Codigo_TrayectoriaHOME.PNG" />
 </p>
 
-A continuación se diseñaron diferentes funciones para el path de cada una de las letras y del logo de tesla con el fin de facilitar detectar errores en el recorrido del código y especificar condiciones detalladas en cada una de las letras y símbolos, tales como velocidad de recorridos en paths específicos, niveles de precisión en algunos targets y tiempos de espera, es importante aclarar que al final de cada función el marcador pasa nuevamente por el target inicial de la letra para finalmente ir al _HOME_ del proyecto.
+Se creó la función paletizado Z el cual consiste en realizar una trayectorias en forma de Z atraves de una matriz diseñada de 3x3 y que llegue a los puntos de origen, del eje x y del eje Y, para esto se diseñó una función ciclica por el cual pasara por todos los puntos del Pallet del 1 al 9.
 
 <p align="center">
-  <img src="/Imágenes/Paths.PNG" />
+  <img src="/Imágenes/Codigo_FuncionPaletizadoZ.PNG" />
 </p>
 
-Finalmente para el diseño de la función principal _main()_ se inició apagando todas las salidas del sistema con el objetico que el dispositivo se encontrara en un estado conocido cuando se empezara a manipular, se procedio a pausar el código hasta presentar una señal de entrada para iniciar el recorrido al estado de mantenimiento y a activar la salida del led1. Una vez hecho el ajuste de mantenimiento el codigo se pausa nuevamente hasta presentar otra señal de entrada la cual le permite llegar a la posición origen de la hoja apagando el led1 y dadole salida al led 2, finalmente al ingresar una tercera señal de entrada el sistema apaga el led 2 y activa el led 3 el cual nos indica que se esta realiazndo el dibujo, en este caso se pasa por cada una de las funciones (letras) para finalmente ubicar el marcador en la posición _HOME_ del proyecto.
+Se creó la función paletizado S el cual consiste en realizar una trayectorias en forma de S através de una matriz diseñada de 3x3 y que llegue a los puntos de origen, del eje x y del eje Y, para esto se paso como una secuencia normal de los 9 puntos con una funcion ciclica, al llegar al punto 4, esta pasa inmediatamente a la posición 6, mientras que cuando llegue al punto 6 esta debe pasar por la posición 4, el resto de las posiciones si conservan sus mismos puntos.
 
 <p align="center">
-  <img src="/Imágenes/Main.PNG" />
+  <img src="/Imágenes/Codigo_FuncionPaletizadoS.PNG" />
+</p>
+
+Se creó la función paletizado externo la cual consiste en el diseño deun pallet através de una matriz 4x4 y que pase por los 16 puntos entre los cuales se encuentran las posiciones de "Origen", del "EjeX" y del "EjeY" por medio de una fuinción ciclica de 16 posiciones.
+
+<p align="center">
+  <img src="/Imágenes/Codigo_FuncionPaletizadoExterno.PNG" />
+</p>
+
+Finalmente se diseño en la función main un ciclo el cual leyera cada una de las entradas, al tener una señal de entrada en el bit 512, el sistema activara la salida del bit 515 y llamara la función del paletizado Z, por otro lado al activar la entrada del bit 513 este llamara la función del paletizado en S activando la salida del biot 516, y finalmente con la señal de entrada del bit 514 se llamara la funcion del paletizado externo activando del mismo modo la salida del bit 517.
+
+<p align="center">
+  <img src="/Imágenes/Codigo_CicloTrayectorias.PNG" />
 </p>
 
 Para acceder al código puede seleccionar el subtítuo de esta sección "Código main EPSON" o darle clic [aquí](/Lab2/Main.prg)
