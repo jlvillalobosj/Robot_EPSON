@@ -35,7 +35,7 @@ Desde el diagramma main del proyecto sehace el llamado a las diferentes funcione
 
 ## Funciones utilizadas
 
-## [Código en RAPID](/LogoTesla/ControllerData/IRB140_6_81/RAPID/TASK1/PROGMOD/Module1.mod)
+## [Código main EPSON](/Lab2/Main.prg)
 
 Para el diseño del código se inició crando una herramienta la cual me ayudaba como referencia para modificar el TCP en donde se establece como punto de referencia la punta del marcador ubicado sobre esta misma, esta se ajustó de modo que el eje Z se muestre en paralelo a la dirección del largo de la herramienta con el fin de asegurar que al ubicar de forma perpendicular el eje Z al plano, del mismo modo el marcador se iba a comportar
 
@@ -63,7 +63,7 @@ Finalmente para el diseño de la función principal _main()_ se inició apagando
   <img src="/Imágenes/Main.PNG" />
 </p>
 
-Para acceder al código puede seleccionar el subtítuo de esta sección "Código RAPID" o darle clic [aquí](/LogoTesla/ControllerData/IRB140_6_81/RAPID/TASK1/PROGMOD/Module1.mod)
+Para acceder al código puede seleccionar el subtítuo de esta sección "Código main EPSON" o darle clic [aquí](/Lab2/Main.prg)
 
 ## Videos de pruebas de funcionamiento
 
