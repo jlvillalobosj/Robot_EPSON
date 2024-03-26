@@ -21,9 +21,17 @@ Para abordar el problema, se implementó la siguiente estrategia:
 El diagrama de flujo presentado se basa en las acciones seriales del brazo robótico con las respectivas restricciones o condiciones que se consideran necesarias para el propósito del robot con diferentes funciones que son accesibles por entrada de datos externos
 
 <p align="center">
-  <img src="/Imágenes/Diagrama BrzoRobotico.drawio.png" width="400" />
+  <img src="/Imágenes/Epson_Main.png" width="400" />
+</p>
+Desde el diagramma main del proyecto sehace el llamado a las diferentes funciones del robot, de modo que realice movimientos consecutivos: Al llamar al paletizado S, el sistema hace un recorrido por nuevec puntos realizado en fomra de S, al llamar el paletizado Z, realiza los movimientos de la matriz en forma de Z y finalmente al llamar la función Externa, realiza movimientos en forma de Z extraponiendo los valores de la matriz original.
+<p align="center">
+  <img src="/Imágenes/Diagrama_FuncionPaletizadoZ.PNG" style="width: 45%; height: auto;" /  />
+ <img src="/Imágenes/PaletizadoZ.PNG" style="width: 45%; height: auto;" / />
 </p>
 
+<p align="center">
+  <img src="/Imágenes/Paletizado_Externo.png" width="400" />
+</p>
 ## Funciones utilizadas
 
 ## [Código en RAPID](/LogoTesla/ControllerData/IRB140_6_81/RAPID/TASK1/PROGMOD/Module1.mod)
