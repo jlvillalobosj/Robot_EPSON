@@ -18,7 +18,7 @@ Para abordar el problema, se implementó la siguiente estrategia:
 
 ## Diagrama de flujo
 
-El diagrama de flujo presentado se basa en las acciones seriales del brazo robótico con las respectivas restricciones o condiciones que se consideran necesarias para el propósito del robot
+El diagrama de flujo presentado se basa en las acciones seriales del brazo robótico con las respectivas restricciones o condiciones que se consideran necesarias para el propósito del robot con diferentes funciones que son accesibles por entrada de datos externos
 
 <p align="center">
   <img src="/Imágenes/Diagrama BrzoRobotico.drawio.png" width="400" />
