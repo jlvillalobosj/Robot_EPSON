@@ -30,8 +30,9 @@ Desde el diagramma main del proyecto sehace el llamado a las diferentes funcione
 </p>
 
 <p align="center">
-  <img src="/Imágenes/Paletizado_Externo.png" width="400" />
+  <img src="/Imágenes/Paletizado_Externo.PNG" width="400" />
 </p>
+
 ## Funciones utilizadas
 
 ## [Código en RAPID](/LogoTesla/ControllerData/IRB140_6_81/RAPID/TASK1/PROGMOD/Module1.mod)
