@@ -35,6 +35,8 @@ Desde el diagramma main del proyecto sehace el llamado a las diferentes funcione
 
 ## Funciones utilizadas
 
+Con ayuda del manual de epson [[Guia_Manual](/GuiasEPSON/epson_spel_pl_70_language_reference-r700a_rc90_t(v73r4).pdf)] se usaron diferentes funciones internas de EPSON para el diseño de las trayectorias.
+
 ## [Código main EPSON](/Lab2/Main.prg)
 
 Para el diseño del código se inició crando un punto nombrado como HOME, desde el cual el robot parte para iniciar las trayectorias. Seguido a esto se crean puntos para el origen, el EjeX y el EjeY, los cuales nos ayudan para referenciar los mapeos que se realizan durante las trayectorias.
