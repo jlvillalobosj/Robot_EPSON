@@ -43,7 +43,7 @@ Para el diseño del código se inició crando un punto nombrado como HOME, desde
 
 <p align="center">
   <img src="/Imágenes/CreacionHerramienta.PNG" />
- <img src="/Imágenes/TCP.PNG" style="width: 45%; height: auto;" />
+ <img src="/Imágenes/Puntos_X_Y_Origen.PNG" style="width: 45%; height: auto;" />
 </p>
 
 A continuación se crearon los diferentes nombres como referencia para cada una de las salidas, desde la función main se activaron los motores y se establecio una salida de potencia alta en cada uno de estos, una vez pasados por los puntos del estado HOME, se procedió a pasar por los puntos creados de "Origen", "EjeX" y "EjeY", con el fin de evaluar los mapeos que se van a crear atraves de estosl.
