@@ -37,6 +37,23 @@ Desde el diagramma main del proyecto sehace el llamado a las diferentes funcione
 
 Con ayuda del manual de epson [[Guia_Manual](/GuiasEPSON/epson_spel_pl_70_language_reference-r700a_rc90_t(v73r4).pdf)] se usaron diferentes funciones internas de EPSON para el diseño de las trayectorias.
 
+1. Funciones de configuración
+    - *Motor On,Off:* Activa o desactiva la salida de los motores del brazo robótico.
+    - *Power HIGH; LOW:* Establece los niveles de potencia con los que se van a alimentar los motores del brazo robótico para de este modo no forzar las diferentes movimientos.
+    - *Speed:* Indica a nivel portentual la velocidad máxima que van a tener los motores durante cada desplazamiento.
+    - *Accel:* Indica el nivel de aceleración y desaceleración en los motores para llegar a su velocidad máxima y mínima.
+2. Funciones de desplazamiento
+    - *Go:* Desplaza el robot a un punto realizando un movimiento puntual, es necesario en este caso mencionar el movimieintomen Z para desplazarlo verticalmente como una función aparte, se aclara que por medio de este movimiento el robot sufre menos esfuerzos por lo que es menos posible que aparezcan errores en este caso.
+    - *Move:* Desplaza el robot hasta el punto referenciado usando una interpolación lineal
+    - *Wait:*
+    - *Call:*
+3. Funciones de entradas y salidas
+    - *MemSw():*
+    - *MemOn():*
+4. Pallet()
+    - Subelemento 1
+    - Subelemento 2
+
 ## [Código main EPSON](/Lab2/Main.prg)
 
 Para el diseño del código se inició crando un punto nombrado como HOME, desde el cual el robot parte para iniciar las trayectorias. Seguido a esto se crean puntos para el origen, el EjeX y el EjeY, los cuales nos ayudan para referenciar los mapeos que se realizan durante las trayectorias.
