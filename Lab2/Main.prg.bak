@@ -48,7 +48,7 @@ Function paletizado_z
 	For i = 1 To 9
 		Go Pallet(1, i) :Z(781.751 + 100)
 		Go Pallet(1, i)
-		Go Pallet(1, 6) :Z(781.751 + 100)
+		Go Pallet(1, i) :Z(781.751 + 100)
 	Next
 Fend
 '52
@@ -65,11 +65,11 @@ Function paletizado_s
 		ElseIf i = 6 Then
 			Go Pallet(1, 4) :Z(781.751 + 100)
 			Go Pallet(1, 4)
-			Go Pallet(1, 6) :Z(781.751 + 100)
+			Go Pallet(1, 4) :Z(781.751 + 100)
 		Else
 			Go Pallet(1, i) :Z(781.751 + 100)
 			Go Pallet(1, i)
-			Go Pallet(1, 6) :Z(781.751 + 100)
+			Go Pallet(1, i) :Z(781.751 + 100)
 		EndIf
 	Next
 Fend
@@ -83,7 +83,7 @@ Function paletizado_externo
 		For j = 1 To 4
 			Go Pallet(2, i, j) :Z(781.751 + 100)
 			Go Pallet(2, i, j)
-			Go Pallet(1, 6) :Z(781.751 + 100)
+			Go Pallet(2, i, j) :Z(781.751 + 100)
 		Next
 	Next
 Fend

@@ -1,12 +1,12 @@
-ENVT0100,LM:2024/03/26 16:27:10:130,DS:0000007211,CS:10024,MA:40-1C-83-5E-32-82,EI:           
+ENVT0100,LM:2024/03/14 17:14:50:581,DS:0000007149,CS:16484,MA:CC-47-40-70-C5-DB,EI:           
 SystemProperties {
 	sRCVersion="7.5.2"
 	sRCRevision=""
 	sGUID="e6c421de-143a-4c91-970c-f50ed3fbf3ca"
-	sPath="D:\\EpsonRC70\\Projects\\Lab2\\"
+	sPath="C:\\EpsonRC70\\Projects\\Lab2\\"
 	sCreated="14/03/2024 7:39:44 a.x"
-	sLastModified="14/03/2024 12:14:50 p.x"
-	bBuildComplete=False
+	sLastModified="14/03/2024 12:14:50 p.\x"
+	bBuildComplete=True
 	bFirstBuildComplete=True
 	bRebuildRequired=False
 	bClearControllerProject=False
@@ -21,13 +21,13 @@ UserProperties {
 	bGlobalsDeclaredEachFile=False
 }
 ControllerConnection {
-	sName="CapacitacionVT6"
-	sType="Virtual"
-	sIPAddress="127.0.0.1"
+	sName="USB"
+	sType="USB"
+	sIPAddress="N/A"
 	nPort=-1
-	sControllerName=""
-	nControllerType=6
-	sControllerTypeName="Virtual"
+	sControllerName="VT6-A901S"
+	nControllerType=458754
+	sControllerTypeName="VT"
 }
 IOLabelFile {
 	sName="IOLabels.dat"
@@ -41,9 +41,9 @@ nRobotCount=2
 nProgramFileCount=1
 ProgramFile1 {
 	sName="Main.prg"
-	bCompiled=False
+	bCompiled=True
 	bStoreInController=True
-	sTimeSavedInController="3/14/2024 5:14:50 PM"
+	sTimeSavedInController="14/03/2024 5:14:50 p.\x"
 }
 nIncludeFileCount=0
 nPointFileCount=2
@@ -51,13 +51,13 @@ PointFile1 {
 	sName="robot1.pts"
 	nRobot=1
 	bDefault=True
-	sTimeSavedInController="3/14/2024 4:57:22 PM"
+	sTimeSavedInController="14/03/2024 4:57:21 p.\x"
 }
 PointFile2 {
 	sName="robot2.pts"
 	nRobot=2
 	bDefault=True
-	sTimeSavedInController="3/14/2024 4:00:24 PM"
+	sTimeSavedInController="14/03/2024 4:00:23 p.\x"
 }
 nForceFileCount=0
 OperatorSettings {
@@ -425,6 +425,6 @@ FGFile1 {
 }
 bFGCompiled=False
 Simulator {
-	sSimProjFile="C:\\EpsonRC70\\Simulator\\CapacitacionVT6\\SimObjects.dat"
+	sSimProjFile=""
 }
 nPFFileCount=0

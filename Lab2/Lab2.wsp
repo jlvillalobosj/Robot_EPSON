@@ -1,14 +1,16 @@
-ENVT0100,LM:2024/03/26 16:31:35:000,DS:0000003020,CS:20526,MA:40-1C-83-5E-32-82,EI:           
+ENVT0100,LM:2024/03/26 16:37:22:660,DS:0000003058,CS:25605,MA:40-1C-83-5E-32-82,EI:           
+sActiveChild="Main.prg"
+bMdiMaximized=True
 nProgramFileCount=1
 ProgramFile1 {
 	sName="Main.prg"
-	bOpened=False
-	nWinState=0
+	bOpened=True
+	nWinState=2
 	Window {
 		nLeft=0
 		nTop=0
-		nWidth=720
-		nHeight=779
+		nWidth=721
+		nHeight=470
 	}
 }
 nIncludeFileCount=0
@@ -50,10 +52,10 @@ CmdWindow {
 RunWindow {
 	bOpened=False
 	Window {
-		nLeft=1
-		nTop=359
-		nWidth=741
-		nHeight=410
+		nLeft=0
+		nTop=0
+		nWidth=743
+		nHeight=414
 	}
 	nWinState=0
 	nNumOfDisplays=1
@@ -96,19 +98,19 @@ IOLabelEditor {
 IOMonitor {
 	bOpened=False
 	Window {
-		nLeft=885
-		nTop=184
+		nLeft=927
+		nTop=193
 		nWidth=520
 		nHeight=375
 	}
 }
 Simulator {
-	bOpened=True
+	bOpened=False
 	Window {
 		nLeft=0
 		nTop=0
-		nWidth=1760
-		nHeight=779
+		nWidth=0
+		nHeight=0
 	}
 }
 TaskMgr {
@@ -134,7 +136,7 @@ RobotMgr {
 	Window {
 		nLeft=0
 		nTop=0
-		nWidth=766
+		nWidth=792
 		nHeight=530
 	}
 }

@@ -39,7 +39,7 @@ Function main
 		EndIf
 	Loop
 Fend
-'43
+
 Function paletizado_z
 	Integer i
 	
@@ -51,7 +51,7 @@ Function paletizado_z
 		Go Pallet(1, i) :Z(781.751 + 100)
 	Next
 Fend
-'52
+
 Function paletizado_s
 	Integer i
 	
@@ -73,7 +73,7 @@ Function paletizado_s
 		EndIf
 	Next
 Fend
-'68
+
 Function paletizado_externo
 	Integer i, j
 	
