@@ -50,15 +50,15 @@ Con ayuda del manual de epson [[Guia_Manual](/GuiasEPSON/epson_spel_pl_70_langua
     - *Accel:* Indica el nivel de aceleración y desaceleración en los motores para llegar a su velocidad máxima y mínima.
 2. Funciones de desplazamiento
     - *Go:* Desplaza el robot a un punto realizando un movimiento puntual, es necesario en este caso mencionar el movimieintomen Z para desplazarlo verticalmente como una función aparte, se aclara que por medio de este movimiento el robot sufre menos esfuerzos por lo que es menos posible que aparezcan errores en este caso.
-    - *Move:* Desplaza el robot hasta el punto referenciado usando una interpolación lineal
-    - *Wait:*
-    - *Call:*
+    - *Move:* Desplaza el robot hasta el punto referenciado usando una interpolación lineal, aunque usa un trayecto mas corto puede afectar alguna de las articulaciones del robot
+    - *Wait:* Se encarga de pausar la ejecución del código hasta cumplir una condición específica, ya sea por alguna señal de entrada, un tiempo determinado, entre otras.
+    - *Call:* Se considera como un llamado a una función externa a la que se este realizando.
 3. Funciones de entradas y salidas
-    - *MemSw():*
-    - *MemOn():*
+    - *MemSw():* Entrada binaria desde memoria, tomando valores desde el 512
+    - *MemOn():* Salida binaria desde memoria, tomando valores desde el 512
 4. Pallet()
-    - Subelemento 1
-    - Subelemento 2
+    - Se encarga de diseñar una matriz plana la cual nos facilita recorrerla bajo coordenadas específicas y precisas
+    - El Pallet externo se encarga de formar una columna o una fila adicional a la que se crea por defecto, tambien nos evita el diseño de un ciclo anidado lo que vuelve el sistema mas lento.
 
 ## [Código main EPSON](/Lab2/Main.prg)
 
