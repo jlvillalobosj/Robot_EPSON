@@ -16,6 +16,12 @@ El presente repositorio tiene por objetivo dar a conocer el funcionamiento del b
 
 Para abordar el problema, se implementó la siguiente estrategia:
 
+- Se estableció la conexión con el controlador del robot.
+- Se fijó la posición HOME del robot, desde donde se iniciarán las trayectorias.
+- Se identificaron los tres puntos esenciales para llevar a cabo el paletizado.
+- Se desarrollaron las tres rutinas de paletizado requeridas.
+- Se integraron las entradas y salidas para gestionar el flujo del programa y visualizar su estado.
+
 ## Diagrama de flujo
 
 El diagrama de flujo presentado se basa en las acciones seriales del brazo robótico con las respectivas restricciones o condiciones que se consideran necesarias para el propósito del robot con diferentes funciones que son accesibles por entrada de datos externos
