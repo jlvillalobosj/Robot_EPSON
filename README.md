@@ -98,7 +98,8 @@ Para acceder al código puede seleccionar el subtítuo de esta sección "Código
 ## Videos de pruebas de funcionamiento
 
 Simulación
-https://github.com/jlvillalobosj/RobotABB-Logo/assets/57506705/320bad9b-4126-4240-a565-06e80536f104
+
+https://github.com/jlvillalobosj/Robot_EPSON/assets/57506705/6cfeb508-4afe-40cf-9301-b48298c972de
 
 Prueba Real
 
